@@ -1,0 +1,63 @@
+# Ignore all log files
+**/logs
+*.log
+
+# Ignore all temp files and compiled Python bytecode
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore environment-specific files
+.env
+
+# Ignore volumes and data directories
+# These are generated runtime volumes, not the ones you explicitly track
+volumes/
+airflow-data/
+nifi-database_repository/
+nifi-flowfile_repository/
+nifi-content_repository/
+nifi-provenance_repository/
+nifi-state/
+nifi-conf/
+postgres/
+pgadmin/
+minio/data/
+
+# Ignore database dumps
+*.sql
+*.sqlite3
+
+# Ignore the Docker Compose override file
+docker-compose.override.yml
+
+# Ignore Docker-related files
+docker-compose.yml
+Dockerfile
+
+# Ignore any credential files (e.g., for services)
+airflow/credentials/
+nifi/credentials/
+
+# Ignore IDE config files
+.idea/
+.vscode/
+*.swp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore Python package caches
+*.egg-info/
+.eggs/
+*.egg
+dist/
+build/
+
+# Ignore PIP related files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore the registry database
+nifi_registry/database/
