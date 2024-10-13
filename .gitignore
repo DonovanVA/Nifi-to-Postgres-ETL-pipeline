@@ -61,3 +61,4 @@ pip-delete-this-directory.txt
 
 # Ignore the registry database
 nifi_registry/database/
+sampleTasks.txt
