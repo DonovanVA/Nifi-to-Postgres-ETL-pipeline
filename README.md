@@ -6,19 +6,18 @@ docker-compose up
 ```
 Services can be found here:
 
-Apache NiFi — http://localhost:8091/nifi/
-Apache NiFi Registry — http://localhost:18080/nifi-registry/
-pgAdmin — http://localhost:5050/browser/
+Apache NiFi — `http://localhost:8091/nifi/`
+Apache NiFi Registry — `http://localhost:18080/nifi-registry/`
+pgAdmin — `http://localhost:5050/browser/`
 
-pgAdmin dummy password:
-password
+pgAdmin dummy password: `password`
 
 postgres connection is done via:
 
-- host: mypostgres
-- username: postgres
-- password: postgres
-- URL: jdbc:postgresql://mypostgres:5432/postgres
+- host: `mypostgres`
+- username: `postgres`
+- password: `postgres`
+- URL: `jdbc:postgresql://mypostgres:5432/postgres`
 
 ![Screenshot 2024-10-13 181531](https://github.com/user-attachments/assets/d9dd751d-8db5-46e3-83c8-34e1e9c766d9)
 
