@@ -1,5 +1,5 @@
 # Nifi to Postgres ETL pipeline
-
+A simple Nifi-Postgres-ETL pipeline I created to demonstrate my understanding of data pipelines
 run
 ```bash
 docker-compose up
