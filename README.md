@@ -1,4 +1,4 @@
-![Screenshot 2024-10-13 194603](https://github.com/user-attachments/assets/e3763bfc-a383-4f0a-93eb-bf7a3d78d722)# Nifi to Postgres ETL pipeline
+# Nifi to Postgres ETL pipeline
 
 run
 ```bash
@@ -75,11 +75,13 @@ ls
 ```
 ![Screenshot 2024-10-13 174010](https://github.com/user-attachments/assets/4fa5a1db-3b8d-44dc-8ff7-09e96af4a389)
 
-Begin versioning the workflow:
-Created a bucket in nifi registry (`settings`-> `New Bucket`), then in nifi I added a nifi registry client connection (3 bars top right ->`controller settings` -> `+`)
+Begin versioning (CI/CD) the workflow:
+Created a bucket in Nifi registry (`settings`-> `New Bucket`), then in nifi I added a nifi registry client connection (3 bars top right ->`controller settings` -> `+`)
 
+In Nifi Registry:
 ![Screenshot 2024-10-13 194603](https://github.com/user-attachments/assets/a87679de-6cac-44ef-b412-469c3e7d2253)
 
+In Nifi:
 ![Screenshot 2024-10-13 192020](https://github.com/user-attachments/assets/dba4cb34-6f41-4281-89ce-84acfc787cf7)
 
 Right click on the process group -> `start version control`, select the client if version control is successful, a green 
