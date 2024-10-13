@@ -101,3 +101,5 @@ then in line 19 of `/airflow/dags/nifi.py` change the process id to yours
 
 Create a new monitoring connection in airflow UI `http://localhost:8085/admin/`
 ![Screenshot 2024-10-13 193359](https://github.com/user-attachments/assets/2e49d4f1-7d2b-4df9-8cd9-cb164122a1ba)
+
+you will then be able to see the DAG in the airflow UI
