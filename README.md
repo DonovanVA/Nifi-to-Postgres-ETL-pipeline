@@ -9,7 +9,7 @@ Services can be found here:
 Apache NiFi — `http://localhost:8091/nifi/`
 Apache NiFi Registry — `http://localhost:18080/nifi-registry/`
 pgAdmin — `http://localhost:5050/browser/`
-
+Airflow - `http://localhost:8085/admin/`
 pgAdmin dummy password: `password`
 
 postgres connection is done via:
@@ -56,7 +56,7 @@ INSERT INTO demo_table (column1, column2) VALUES ("test1", "test2");
 ```sql
 SELECT * FROM demo_table;
 ```
-### 2. Create an ETL Pipeline with Airflow and NiFi
+### 2. Create an ETL Pipeline with NiFi and CI/CD workflows
 Use NiFi to fetch data from Minio or an external API.
 Process the data (e.g., cleaning, transformation) using NiFi processors.
 

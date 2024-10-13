@@ -133,27 +133,6 @@ services:
             timeout: 20s
             retries: 3
 
-    # object storage
-    minio:
-        hostname: myminio
-        container_name: minio_container
-        image: 'bitnami/minio:2021' # latest image as of 2021-11-08
-        environment:
-            MINIO_ACCESS_KEY: minio_admin
-            MINIO_SECRET_KEY: minio_password
-        ports:
-            - '9000:9000'
-            - '9001:9001'
-        volumes:
-            - './minio/data:/data'
-        networks:
-            - dataworld
-        healthcheck:
-            test: ["CMD", "curl", "-f", "http://myminio:9000/minio/health/live"]
-            interval: 30s
-            timeout: 20s
-            retries: 3
-
 volumes:
     airflow-data:
     nifi-database_repository:
