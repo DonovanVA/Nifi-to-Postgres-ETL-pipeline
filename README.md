@@ -48,7 +48,7 @@ For these 2 processors I have made the commands to insert and query each:
 ![Screenshot 2024-10-13 182236](https://github.com/user-attachments/assets/a4294482-7613-4cf4-9cd8-ddc700aa0daf)
 
 ```sql
-INSERT INTO demo_table (column1, column2) VALUES ("test1", "test2");
+INSERT INTO demo_table (column1, column2) VALUES ('test1', 'test2');
 ```
 2. ExecuteSQL
 
