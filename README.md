@@ -1,4 +1,4 @@
-# Building a data lake from scratch
+# Nifi to Postgres ETL pipeline
 
 run
 ```bash
