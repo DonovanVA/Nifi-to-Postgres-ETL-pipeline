@@ -5,11 +5,11 @@ docker-compose up
 ```
 Services can be found here:
 
-Apache NiFi — `http://localhost:8091/nifi/`
-Apache NiFi Registry — `http://localhost:18080/nifi-registry/`
-pgAdmin — `http://localhost:5050/browser/`
-Airflow - `http://localhost:8085/admin/`
-pgAdmin dummy password: `password`
+- Apache NiFi — `http://localhost:8091/nifi/`
+- Apache NiFi Registry — `http://localhost:18080/nifi-registry/`
+- pgAdmin — `http://localhost:5050/browser/`
+- Airflow - `http://localhost:8085/admin/`
+* The pgadmin dummy password is `password`
 
 postgres connection is done via:
 
@@ -85,3 +85,19 @@ In Nifi:
 
 Right click on the process group -> `start version control`, select the client if version control is successful, a green arrow would appear
 ![Screenshot 2024-10-13 192150](https://github.com/user-attachments/assets/c447a3c8-6fea-4ea2-bbdc-53376e8f8d4d)
+
+The registry will then be updated with the new process in the bucket
+![Screenshot 2024-10-13 194551](https://github.com/user-attachments/assets/7c5962d7-47e2-4f1a-bc82-acc897e0489f)
+
+### 3. Airflow monitoring
+Monitor NIFI using Apache-airflow DAGs
+
+Install requirements,
+```bash
+pip install -r requirements.txt
+```
+
+then in line 19 of `/airflow/dags/nifi.py` change the process id to yours
+
+Create a new monitoring connection in airflow UI `http://localhost:8085/admin/`
+![Screenshot 2024-10-13 193359](https://github.com/user-attachments/assets/2e49d4f1-7d2b-4df9-8cd9-cb164122a1ba)
