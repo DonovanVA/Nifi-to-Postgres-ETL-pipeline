@@ -1,4 +1,4 @@
-# Nifi to Postgres ETL pipeline
+![Screenshot 2024-10-13 194603](https://github.com/user-attachments/assets/e3763bfc-a383-4f0a-93eb-bf7a3d78d722)# Nifi to Postgres ETL pipeline
 
 run
 ```bash
@@ -39,7 +39,9 @@ CREATE TABLE IF NOT EXISTS demo_table (
 ```
 
 Preconfigure the DB connection pool in nifi
-![Screenshot 2024-10-13 181814](https://github.com/user-attachments/assets/16f828fd-63fa-4108-b418-51e993ef433e)
+
+![Screenshot 2024-10-13 192426](https://github.com/user-attachments/assets/d1961720-2bf5-4946-a57b-153969750024)
+
 
 For these 2 processors I have made the commands to insert and query each:
 1. PutSQL:
@@ -61,15 +63,24 @@ Use NiFi to fetch data from Minio or an external API.
 Process the data (e.g., cleaning, transformation) using NiFi processors.
 
 How I did it:
-Created a simple txt file generator using generateflowfile and then store it in DB and the nifi_container in `/opt/nifi/nifi-current/output`
+Create a new process group, then I made the following workflow
+Created a simple txt file generator using generateflowfile and then store it in Database and the `nifi_container` in `/opt/nifi/nifi-current/output`
 ![Screenshot 2024-10-13 190844](https://github.com/user-attachments/assets/bf364476-ec40-4644-bf5c-00eecafcadee)
 
+To check for the written file in the container:
 ```bash
 docker exec -it nifi_container /bin/bash
 cd /opt/nifi/nifi-current/output
 ls
 ```
-
-Then check if the data is written to the file specified in the container in `/opt/nifi/nifi-current/output`
 ![Screenshot 2024-10-13 174010](https://github.com/user-attachments/assets/4fa5a1db-3b8d-44dc-8ff7-09e96af4a389)
+
+Begin versioning the workflow:
+Created a bucket in nifi registry, then in nifi I added a registry client
+![Screenshot 2024-10-13 194603](https://github.com/user-attachments/assets/a87679de-6cac-44ef-b412-469c3e7d2253)
+
+Right click on the process group -> `start version control`
+![Screenshot 2024-10-13 192020](https://github.com/user-attachments/assets/dba4cb34-6f41-4281-89ce-84acfc787cf7)
+
+![Screenshot 2024-10-13 192150](https://github.com/user-attachments/assets/c447a3c8-6fea-4ea2-bbdc-53376e8f8d4d)
 
