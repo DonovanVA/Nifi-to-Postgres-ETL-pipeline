@@ -79,8 +79,7 @@ Begin versioning the workflow:
 Created a bucket in nifi registry, then in nifi I added a registry client
 ![Screenshot 2024-10-13 194603](https://github.com/user-attachments/assets/a87679de-6cac-44ef-b412-469c3e7d2253)
 
-Right click on the process group -> `start version control`
 ![Screenshot 2024-10-13 192020](https://github.com/user-attachments/assets/dba4cb34-6f41-4281-89ce-84acfc787cf7)
 
+Right click on the process group -> `start version control`
 ![Screenshot 2024-10-13 192150](https://github.com/user-attachments/assets/c447a3c8-6fea-4ea2-bbdc-53376e8f8d4d)
-
