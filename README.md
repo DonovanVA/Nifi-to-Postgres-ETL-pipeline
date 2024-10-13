@@ -19,6 +19,7 @@ postgres connection is done via:
 - username: postgres
 - password: postgres
 - URL: jdbc:postgresql://mypostgres:5432/postgres
+
 ![Screenshot 2024-10-13 181531](https://github.com/user-attachments/assets/d9dd751d-8db5-46e3-83c8-34e1e9c766d9)
 
 
