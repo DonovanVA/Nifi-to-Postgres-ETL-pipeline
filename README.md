@@ -84,5 +84,5 @@ In Nifi Registry:
 In Nifi:
 ![Screenshot 2024-10-13 192020](https://github.com/user-attachments/assets/dba4cb34-6f41-4281-89ce-84acfc787cf7)
 
-Right click on the process group -> `start version control`, select the client if version control is successful, a green 
+Right click on the process group -> `start version control`, select the client if version control is successful, a green arrow would appear
 ![Screenshot 2024-10-13 192150](https://github.com/user-attachments/assets/c447a3c8-6fea-4ea2-bbdc-53376e8f8d4d)
