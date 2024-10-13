@@ -59,6 +59,7 @@ SELECT * FROM demo_table;
 ```
 
 Table results are here:
+
 ![Screenshot 2024-10-13 201607](https://github.com/user-attachments/assets/e3ddc7f4-55be-417c-b22a-84f2f14286a3)
 
 
