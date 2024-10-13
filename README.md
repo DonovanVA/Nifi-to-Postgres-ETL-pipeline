@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS demo_table (
 ```
 
 Preconfigure the DB connection pool in nifi
-
+(In Database driver connection remember to add `/opt/nifi/nifi-current/jdbc/postgresql-42.7.4.jar`):
 ![Screenshot 2024-10-13 192426](https://github.com/user-attachments/assets/d1961720-2bf5-4946-a57b-153969750024)
 
 
