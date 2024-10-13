@@ -62,7 +62,7 @@ Use NiFi to fetch data from Minio or an external API.
 Process the data (e.g., cleaning, transformation) using NiFi processors.
 
 How I did it:
-Created a simple txt file generator using generateflowfile and then store it in DB
+Created a simple txt file generator using generateflowfile and then store it in DB and the nifi_container in `/opt/nifi/nifi-current/output`
 ![Screenshot 2024-10-13 190844](https://github.com/user-attachments/assets/bf364476-ec40-4644-bf5c-00eecafcadee)
 
 ```bash
@@ -70,5 +70,7 @@ docker exec -it nifi_container /bin/bash
 cd /opt/nifi/nifi-current/output
 ls
 ```
+
+Then check if the data is written to the file specified in the container in `/opt/nifi/nifi-current/output`
 ![Screenshot 2024-10-13 174010](https://github.com/user-attachments/assets/4fa5a1db-3b8d-44dc-8ff7-09e96af4a389)
 
